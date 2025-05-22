@@ -78,6 +78,14 @@ WSGI_APPLICATION = 'vidly.wsgi.application'
 
 DATABASES = {
     'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'HOST': 'c3gtj1dt5vh48j.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com',
+        'NAME': 'd8svbv4i1q3lti',
+        'USER': 'u1ch331kp3l8ip',
+        'PORT': '5432',
+        'PASSWORD': 'pf1c85b01261123eadbfa1c830b71c2c7eb2f19c2aa69668d35f0a55e4a020eaa',
+    },
+    'sqlite': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
